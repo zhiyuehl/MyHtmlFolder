@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>10.17-demo2-js</title>
+	</head>
+	<body>
+		
+		<button id="allSelect" onclick="allSelect()">全选</button>
+		<button id="noSelect" onclick="noSelect()">反选</button>
+		是否都被选中
+		<input type="checkbox" id="result"/>
+		<ul id="listBox" style="list-style-type: none;">
+			<li><input type="checkbox"/>视频</li>
+			<li><input type="checkbox" />图片</li>
+			<li><input type="checkbox" />视频</li>
+			<li><input type="checkbox" />视频</li>
+			<li><input type="checkbox" />娱乐</li>
+			<li><input type="checkbox" />视频</li>
+			<li><input type="checkbox" />视频</li>
+			<li><input type="checkbox" />视频</li>
+			<li><input type="checkbox" />视频</li>
+			<li><input type="checkbox" />视频</li>
+		</ul>
+		
+		
+		<script type="text/javascript">
+			
+			var result = document.getElementById('result');
+			var listBox = document.getElementById('listBox');
+			var arr = listBox.getElementsByTagName('input');
+			function allSelect() {
+				for (var i = 0; i < arr.length; i++) {
+					arr[i].checked = true;
+				}
+			}
+			
+			function noSelect() {
+				for (var i = 0; i < arr.length; i++) {
+					arr[i].checked = !arr[i].checked;
+				}
+			}
+			
+			
+			
+			
+			
+		</script>
+		
+		
+	</body>
+</html>

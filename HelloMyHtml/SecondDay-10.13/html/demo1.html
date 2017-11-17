@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>10.13-demo1-HTML基础</title>
+	</head>
+	<body>
+		<!--表单  name是提交数据的key-->
+		
+		<form action="https://www.baidu.com" method="get">
+			<input type="text"/ name="username">
+			<input type="submit" value="提交到服务器"/>
+		</form>
+		
+		<details open="">
+			<summary>电脑配置</summary>
+			<p>16G内存</p>
+		</details>
+		
+		
+		<form action="https://www.baidu.com" method="get">
+			账号：<input type="text" name="username"/>
+			<br/>
+			密码：<input type="text" name="password"/>
+			<br />
+			<input type="submit" value="登录"/>
+			<br/>
+			爱好：<input type="checkbox" value="0" name="aihao"/>跑步
+			<input type="checkbox" value="1" name="aihao"/>摄影
+			<input type="checkbox" value="2" name="aihao"/>游泳
+			
+			<h4>这是一个单独的按钮，事件不会走form的action</h4>
+			<input type="button" value="我是一个按钮"/>
+			
+			<h4>这是一个选择文件的按钮 value没用</h4>
+			<input type="file" value=""/>
+			<h4>多行输入文本</h4>
+			<p>请输入建议:</p>
+			<textarea name="jianyi" id="" rows="20" cols="20"></textarea>
+			
+			<h4>下拉选择</h4>
+			<select name="gender" id="">
+				<option value="0">男</option>
+				<option value="1">女</option>
+				<option value="2">保密</option>
+			</select>
+			
+			
+		</form>
+		<h3>HTML5的新增type类型</h3>
+		<!-- color、date、datetime、datetime-local、month、week、time、email、number、range、search、tel 和 url。 -->
+		<input type="color"><br>
+		date
+		<input type="date"><br>
+		datetime
+		<input type="datetime"><br>
+		datetime-local
+		<input type="datetime-local"><br>
+		month
+		<input type="month"><br>
+		week
+		<input type="week"><br>
+		time
+		<input type="time"><br>
+		<!-- email：输入类型应该对于的是包含邮件地址的字段，提交表单的时候，自动的对email进行检查 -->
+		email
+		<input type="email"><br>
+		number
+		<input type="number"><br>
+		range
+		<input type="range"><br>
+		search
+		<input type="search"><br>
+		tel
+		<input type="tel"><br>
+		url
+		<input type="url"><br>
+
+		<!-- for是属性的值=input 下的id的属性值 -->
+		<label for="upfile">文件上传</label>
+		<input type="file" id="upfile">
+		
+	</body>
+</html>

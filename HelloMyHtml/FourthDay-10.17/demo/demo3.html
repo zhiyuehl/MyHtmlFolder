@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>10.17-dmeo3-timer</title>
+	</head>
+	<body>
+		
+		<img src="img/img/1.jpg" id="topImage"/><br /><br />
+		<input type="button" value="向左" onclick="toLeft()"/>
+		<input type="button" value="向右" onclick="toRight()"/>
+		<input type="button" value="自动开始" onclick="autoBegin()"/>
+		<input type="button" value="停止" onclick="stopAnimation()"/>
+		
+		<script type="text/javascript">
+			
+			var imgArr = ["img/img/1.jpg","img/img/2.jpg","img/img/3.jpg","img/img/4.jpg","img/img/5.jpg","img/img/6.jpg","img/img/7.jpg","img/img/8.jpg"];
+			var topImage = document.getElementById('topImage');
+			
+			var index = 0;
+			
+			function toLeft() {
+				changeImages(-1);
+				topImage.direction = 'left';
+			}
+			
+			function toRight() {
+				changeImages(1);
+				topImage.direction = 'right';
+			}
+			
+			var timer;
+			
+			function autoBegin() {
+				clearInterval(timer);
+				timer = setInterval(timerauto,500);
+			}
+			
+			function timerauto(){
+				var value = topImage.direction == 'left' ? -1 : 1;
+				changeImages(value);
+			}
+			
+			function stopAnimation() {
+				clearInterval(timer);
+			}
+			
+			function changeImages(value) {
+				index += value;
+				if (index < 0) {
+					index = imgArr.length-1;
+				}
+				if (index >= imgArr.length) {
+					index = 0;
+				}
+				topImage.src = imgArr[index];
+			}
+			
+			
+			
+			
+		</script>
+		
+		
+		
+	</body>
+</html>

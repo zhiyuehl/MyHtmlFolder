@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>10.17-demo8-email</title>
+		
+		<style type="text/css">
+			
+			* {
+				padding: 0px;
+				margin: 0px;
+				
+			}
+			
+			.content {
+				width: 400px;
+				height: 400px;
+				margin: 50px auto;
+			}
+			
+			.leftContent {
+				width: 100px;
+				height: 400px;
+				position: absolute;
+			}
+			
+			.rightContent {
+				width: 300px;
+				height: 400px;
+				margin-left: 100px;
+				border: 1px solid silver;
+				border-left: 0px;
+				position: absolute;
+			}
+			
+			#email {
+				text-align: center;
+				font-size: 40px;
+				width: 100%;
+				line-height: 400px;
+				position: absolute;
+			}
+			
+			.emailType {
+				width: 100px;
+				border: 1px solid silver;
+				text-align: center;
+				line-height: 98.5px;
+			}
+			
+			.emailp {
+				width: 100%;
+				height: 98.5px;
+				text-align: center;
+			}
+			#redStar {
+				border: 15px solid transparent;
+				left: 72px;
+				top: 30px;
+				border-right-color: brown;
+				position: absolute;
+				transition: top .5s;
+			}
+			
+		</style>
+		
+		
+	</head>
+	<body>
+		
+		<div class="content">
+			<div class="leftContent">
+				<div class="emailType">
+					<p class="emailp">163邮箱</p>
+				</div>
+				<div class="emailType">
+					<p class="emailp">google邮箱</p>
+				</div>
+				<div class="emailType">
+					<p class="emailp">qq邮箱</p>
+				</div>
+				<div class="emailType">
+					<p class="emailp">iCloud邮箱</p>
+				</div>	
+				<div id="redStar">
+					
+				</div>
+			</div>
+			
+			<div class="rightContent">
+				<p id="email">163邮箱</p>
+				
+			</div>
+			
+		</div>
+		
+		<script type="text/javascript">
+			var emailTypes = document.querySelectorAll(".emailType");
+			var email = document.getElementById('email');
+			var redStar = document.getElementById('redStar');
+			
+			for (var i = 0; i < emailTypes.length; i++) {
+				emailTypes[i].index = i;
+				emailTypes[i].onclick = function() {
+					for (var j = 0; j < emailTypes.length; j++) {
+						emailTypes[j].style.background = 'transparent';
+						emailTypes[j].style.color = 'black';
+					}
+					this.style.background = 'silver';
+					this.style.color = '#AA0000';
+					email.innerText = this.innerText;
+					redStar.style.top = (30 + this.index*100) + 'px';
+				}
+			}
+			
+			
+		</script>
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>

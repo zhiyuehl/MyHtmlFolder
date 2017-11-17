@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>10.18-demo1-jquery</title>
+		
+		<script type="text/javascript" src="jquery/jquery-3.1.0.min.js">
+			
+		</script>
+		
+	</head>
+	<body>
+		
+		<input type="button" value="全选" id="btn1"/>
+		<input type="button" value="反选" id="btn2"/>
+		<ul>
+			<li><input type="checkbox"/></li>
+			<li><input type="checkbox"/></li>
+			<li><input type="checkbox"/></li>
+			<li><input type="checkbox"/></li>
+			<li><input type="checkbox"/></li>
+			<li><input type="checkbox"/></li>
+			<li><input type="checkbox"/></li>
+			<li><input type="checkbox"/></li>
+		</ul>	
+		<br />
+		<input type="button" value="显示" id="btn3"/>
+		<input type="button" value="隐藏" id="btn4"/>
+		<input type="button" value="显示或隐藏" id="btn5"/>
+		<div id="red1" style="width: 200px;height: 200px;background-color: red;"></div>
+		<br />
+		<input type="button" value="淡入" id="btn6"/>
+		<input type="button" value="淡出" id="btn7"/>
+		<input type="button" value="淡入或淡出" id="btn8"/>
+		<div id="red2" style="width: 200px;height: 200px;background-color: blue;"></div>
+		
+		<br />
+		<br />
+		<div style="border: 1px solid silver; width: 300px;height: 40px;">
+			<p id="btn9" style="width: 100%; height: 100%;text-align: center;background-color: aquamarine;line-height: 40px;margin: 0px;">点击展开</p>
+		</div>
+		
+		<div id="hideDiv" style="border: 1px solid silver;width: 300px; display: none; ">
+			<p style="width: 100%;text-align: center;background-color: aquamarine;margin: 0px;">少壮不努力<br/>老大徒伤悲</p>
+		</div>
+		
+		<br />
+		<br />
+		<input id="btn10" type="button" value="开始动画"/>
+		<div id="animatDiv" style="width: 100px;height: 100px;background-color: red;"></div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<script type="text/javascript">
+			$(function(){
+				$("#btn1").click(function(){
+					$("input:checkbox").prop("checked",true);
+				});
+				$("#btn2").click(function(){
+					$("input:checkbox").each(function(){
+						var value = $(this).prop("checked");
+						$(this).prop("checked",!value);
+					});
+				});
+				$("#btn3").click(function(){
+					$("#red1").show(1000);
+				});
+				$("#btn4").click(function(){
+					$("#red1").hide(500);
+				});
+				$("#btn5").click(function(){
+					$("#red1").toggle('slow',function(){
+						var isHide = $("#red1").css('display') == 'block' ? false : true;
+						isHide ? $("#btn5").prop("value","显示") : $("#btn5").prop("value","隐藏");
+					});
+				});
+				
+				$("#btn6").click(function(){
+					$("#red2").fadeIn(1000);
+				});
+				
+				$("#btn7").click(function(){
+					$("#red2").fadeOut(500);
+				});
+				
+				$("#btn8").click(function(){
+					$("#red2").fadeToggle(function(){
+						var isHide = $("#red2").css('display') == 'block' ? false : true;
+						isHide ? $("#btn8").prop("value","淡入") : $("#btn8").prop("value","淡出");
+					});
+				});
+				
+				$("#btn9").prop('isShow',false);
+				$("#btn9").click(function(){
+					var show = $("#btn9").prop("isShow");
+					$("#btn9").prop("isShow",!show);
+					show ? $("#btn9").text("点击展开") : $("#btn9").text("点击隐藏");
+					show ? $("#hideDiv").slideUp(200) : $("#hideDiv").slideDown(200);
+				});
+				
+				
+				$("#btn10").click(function(){
+					$("#animatDiv").animate({height:'200px',opacity:'0.4'},"slow");
+					$("#animatDiv").animate({width:'200px',opacity:'1.0'},"slow");
+					$("#animatDiv").animate({height:'100px',opacity:'0.4'},"speed");
+					$("#animatDiv").animate({width:'100px',opacity:'1.0'},"speed");
+				});
+				
+				
+			});
+			
+		</script>
+		
+		
+	</body>
+</html>

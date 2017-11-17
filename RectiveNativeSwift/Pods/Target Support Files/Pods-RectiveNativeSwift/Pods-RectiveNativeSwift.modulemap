@@ -1,0 +1,6 @@
+framework module Pods_RectiveNativeSwift {
+  umbrella header "Pods-RectiveNativeSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

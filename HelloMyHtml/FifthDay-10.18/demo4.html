@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>10.18-demo4-ajax</title>
+	</head>
+	<body>
+		
+		
+		
+		<script src="jquery/jquery-3.1.0.min.js"></script>
+		
+		
+		
+		<p id="webresult">123</p>
+		<button id="btn">login</button>
+		
+		<script>
+			
+			$(function(){
+				
+				$("#btn").click(function(){
+					
+					
+					
+					$.get("http://192.168.0.123:9998/tp5/public/index.php?s=index/index/login",function(data,status){
+						var res = eval(data);
+						alert(res['msg']);
+						console.log(data);
+						alert(status);
+					});
+
+					
+					
+				});
+				
+				
+				
+				
+				
+				
+			});
+			
+			
+			
+			
+		</script>
+		
+		
+	</body>
+</html>

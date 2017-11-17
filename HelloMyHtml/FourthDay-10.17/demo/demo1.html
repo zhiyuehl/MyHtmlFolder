@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>10.17-demo1-js</title>
+		
+		
+	</head>
+	<body>
+		
+		<img src="img/1.gif" id="light"/>
+		<p id="show"></p>
+		<button id="action" onclick="action()">下注</button>
+		
+		<script type="text/javascript">
+			
+			//开灯关灯。
+			var light = document.getElementById('light');
+			light.open = false;
+			light.onclick = function() {
+				light.open = !light.open;
+				light.src = light.open ? 'img/2.gif' : 'img/1.gif';
+			}
+			
+			function action() {
+				var show = document.getElementById('show');
+				var btn = document.getElementById('action');
+				var arr = [];
+				while (arr.length != 6) {
+					var rand = randomNumber(1,33);
+					if (ifContain(rand,arr)) {
+						continue;
+					}
+					arr.push(rand);
+				}
+				show.innerText = arr;
+			}
+			//随机数
+			function randomNumber(min,max) {
+				return parseInt(Math.random()*(max-min+1) + min);
+			}
+			
+			function ifContain(num,arr) {
+				for (var i = 0; i < arr.length;i ++) {
+					if (num == arr[i]) {
+						return true;
+					}
+				}
+				return false;
+			}
+			
+			
+		</script>
+		
+	</body>
+</html>

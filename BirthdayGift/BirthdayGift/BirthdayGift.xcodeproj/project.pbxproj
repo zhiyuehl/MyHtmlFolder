@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C78757531F9F1F55006056BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78757521F9F1F55006056BF /* AppDelegate.swift */; };
+		C78757581F9F1F55006056BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C78757561F9F1F55006056BF /* Main.storyboard */; };
+		C787575A1F9F1F55006056BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C78757591F9F1F55006056BF /* Assets.xcassets */; };
+		C787575D1F9F1F55006056BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C787575B1F9F1F55006056BF /* LaunchScreen.storyboard */; };
+		C78757651F9F282B006056BF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78757641F9F282B006056BF /* LoginViewController.swift */; };
+		C78D9AF21FA024F8008B2B73 /* KUAIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78D9AF11FA024F8008B2B73 /* KUAIViewController.swift */; };
+		C78D9AF41FA02FB4008B2B73 /* RIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78D9AF31FA02FB4008B2B73 /* RIViewController.swift */; };
+		C78D9AF61FA02FC1008B2B73 /* SHENGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78D9AF51FA02FC1008B2B73 /* SHENGViewController.swift */; };
+		C78D9AF81FA02FCA008B2B73 /* LEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78D9AF71FA02FCA008B2B73 /* LEViewController.swift */; };
+		C78D9AFA1FA03014008B2B73 /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78D9AF91FA03014008B2B73 /* MainTabbarViewController.swift */; };
+		C79A76E21FA18677004B282E /* 云雀合唱团 - 祝你生日快乐.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C79A76E11FA1866A004B282E /* 云雀合唱团 - 祝你生日快乐.mp3 */; };
+		C79A76E61FA1AA21004B282E /* 温岚,周杰伦 - 祝我生日快乐.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C79A76E41FA1AA1B004B282E /* 温岚,周杰伦 - 祝我生日快乐.mp3 */; };
+		C79A76E71FA1AA24004B282E /* 陈一发儿 - 童话镇.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C79A76E31FA1AA1B004B282E /* 陈一发儿 - 童话镇.mp3 */; };
+		C79A76EA1FA1B140004B282E /* BaoBaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79A76E91FA1B140004B282E /* BaoBaoViewController.swift */; };
+		C79A76EC1FA1DCDF004B282E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79A76EB1FA1DCDF004B282E /* Constant.swift */; };
+		C7AAFC781F9F37DC00D482CA /* 刘若英 - 生日快乐.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C7AAFC771F9F37D300D482CA /* 刘若英 - 生日快乐.mp3 */; };
+		C7AAFC7A1F9F3DB300D482CA /* MusicHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AAFC791F9F3DB300D482CA /* MusicHandle.swift */; };
+		C7D7EF5C1FA2C8190092305E /* YKHappyBirthdayViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = C7D7EF521FA2C2810092305E /* YKHappyBirthdayViewController.xib */; };
+		C7D7EF5D1FA2C82C0092305E /* YKHappyBirthdayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7D7EF521FA2C2810092305E /* YKHappyBirthdayViewController.xib */; };
+		C7D7EF651FA2CA750092305E /* YKAudioPlayerMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D7EF471FA2C2800092305E /* YKAudioPlayerMgr.m */; };
+		C7D7EF661FA2CA750092305E /* YKBirthdayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D7EF491FA2C2810092305E /* YKBirthdayItem.m */; };
+		C7D7EF671FA2CA750092305E /* YKBirthdayMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D7EF4B1FA2C2810092305E /* YKBirthdayMgr.m */; };
+		C7D7EF681FA2CA750092305E /* YKBirthdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D7EF4E1FA2C2810092305E /* YKBirthdayView.m */; };
+		C7D7EF691FA2CA750092305E /* YKHappyBirthdayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D7EF511FA2C2810092305E /* YKHappyBirthdayViewController.m */; };
+		C7D7EF771FA2D1E90092305E /* ActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D7EF751FA2D1DD0092305E /* ActionButton.m */; };
+		C7D7EF781FA2D1E90092305E /* DrowLine.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D7EF761FA2D1DD0092305E /* DrowLine.m */; };
+		C7D7EF791FA2D1E90092305E /* FireView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D7EF6F1FA2D1DC0092305E /* FireView.m */; };
+		C7D7EF7A1FA2D1E90092305E /* Stars.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D7EF731FA2D1DD0092305E /* Stars.m */; };
+		C7D7EF7B1FA2D1E90092305E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D7EF6C1FA2D1DC0092305E /* UIView+Extension.m */; };
+		C7D7EF7C1FA2D1E90092305E /* WPDrowAnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D7EF721FA2D1DD0092305E /* WPDrowAnimationLayer.m */; };
+		C7D7EF851FA303D90092305E /* 小蓓蕾组合 - 祝你生日快乐.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C7D7EF841FA302930092305E /* 小蓓蕾组合 - 祝你生日快乐.mp3 */; };
+		C7D7EFCA1FA318580092305E /* CUSSenderBirthdayLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D7EF891FA30DAD0092305E /* CUSSenderBirthdayLayer.m */; };
+		C7D7EFCB1FA318580092305E /* CUSSenderFlowerLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D7EF8D1FA30DAD0092305E /* CUSSenderFlowerLayer.m */; };
+		C7D7EFCC1FA318580092305E /* CUSSenderKissLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D7EF911FA30DAD0092305E /* CUSSenderKissLayer.m */; };
+		C7D7EFCD1FA318580092305E /* CUSSenderStarLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D7EF991FA30DAE0092305E /* CUSSenderStarLayer.m */; };
+		C7D7EFCF1FA318730092305E /* CUSSenderFallLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D7EF8B1FA30DAD0092305E /* CUSSenderFallLayer.m */; };
+		C7D7EFD31FA318730092305E /* CUSSenderGoldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D7EF8F1FA30DAD0092305E /* CUSSenderGoldLayer.m */; };
+		C7D7EFD61FA318730092305E /* CUSSenderLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D7EF931FA30DAD0092305E /* CUSSenderLayer.m */; };
+		C7D7EFD81FA318730092305E /* CUSSenderRainLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D7EF951FA30DAE0092305E /* CUSSenderRainLayer.m */; };
+		C7D7EFDA1FA318730092305E /* CUSSenderSnowLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D7EF971FA30DAE0092305E /* CUSSenderSnowLayer.m */; };
+		D342FD15A5515526C45054FC /* Pods_BirthdayGift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C6B36EDB84A1FFD6DA8F76F /* Pods_BirthdayGift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C6B36EDB84A1FFD6DA8F76F /* Pods_BirthdayGift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BirthdayGift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89D27D3BAAEAF7EFA4B9F67F /* Pods-BirthdayGift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirthdayGift.release.xcconfig"; path = "Pods/Target Support Files/Pods-BirthdayGift/Pods-BirthdayGift.release.xcconfig"; sourceTree = "<group>"; };
+		B3CE6C04BC4517EA37E98E51 /* Pods-BirthdayGift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirthdayGift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BirthdayGift/Pods-BirthdayGift.debug.xcconfig"; sourceTree = "<group>"; };
+		C787574F1F9F1F55006056BF /* BirthdayGift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirthdayGift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C78757521F9F1F55006056BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C78757571F9F1F55006056BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C78757591F9F1F55006056BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C787575C1F9F1F55006056BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C787575E1F9F1F55006056BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C78757641F9F282B006056BF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C78D9AF11FA024F8008B2B73 /* KUAIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KUAIViewController.swift; sourceTree = "<group>"; };
+		C78D9AF31FA02FB4008B2B73 /* RIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIViewController.swift; sourceTree = "<group>"; };
+		C78D9AF51FA02FC1008B2B73 /* SHENGViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHENGViewController.swift; sourceTree = "<group>"; };
+		C78D9AF71FA02FCA008B2B73 /* LEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEViewController.swift; sourceTree = "<group>"; };
+		C78D9AF91FA03014008B2B73 /* MainTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
+		C79A76E11FA1866A004B282E /* 云雀合唱团 - 祝你生日快乐.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "云雀合唱团 - 祝你生日快乐.mp3"; sourceTree = "<group>"; };
+		C79A76E31FA1AA1B004B282E /* 陈一发儿 - 童话镇.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "陈一发儿 - 童话镇.mp3"; sourceTree = "<group>"; };
+		C79A76E41FA1AA1B004B282E /* 温岚,周杰伦 - 祝我生日快乐.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "温岚,周杰伦 - 祝我生日快乐.mp3"; sourceTree = "<group>"; };
+		C79A76E91FA1B140004B282E /* BaoBaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaoBaoViewController.swift; sourceTree = "<group>"; };
+		C79A76EB1FA1DCDF004B282E /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		C7AAFC771F9F37D300D482CA /* 刘若英 - 生日快乐.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "刘若英 - 生日快乐.mp3"; sourceTree = "<group>"; };
+		C7AAFC791F9F3DB300D482CA /* MusicHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicHandle.swift; sourceTree = "<group>"; };
+		C7D7EF461FA2C2800092305E /* YKAudioPlayerMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKAudioPlayerMgr.h; sourceTree = "<group>"; };
+		C7D7EF471FA2C2800092305E /* YKAudioPlayerMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKAudioPlayerMgr.m; sourceTree = "<group>"; };
+		C7D7EF481FA2C2810092305E /* YKBirthdayItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKBirthdayItem.h; sourceTree = "<group>"; };
+		C7D7EF491FA2C2810092305E /* YKBirthdayItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKBirthdayItem.m; sourceTree = "<group>"; };
+		C7D7EF4A1FA2C2810092305E /* YKBirthdayMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKBirthdayMgr.h; sourceTree = "<group>"; };
+		C7D7EF4B1FA2C2810092305E /* YKBirthdayMgr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKBirthdayMgr.m; sourceTree = "<group>"; };
+		C7D7EF4D1FA2C2810092305E /* YKBirthdayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKBirthdayView.h; sourceTree = "<group>"; };
+		C7D7EF4E1FA2C2810092305E /* YKBirthdayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKBirthdayView.m; sourceTree = "<group>"; };
+		C7D7EF501FA2C2810092305E /* YKHappyBirthdayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKHappyBirthdayViewController.h; sourceTree = "<group>"; };
+		C7D7EF511FA2C2810092305E /* YKHappyBirthdayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKHappyBirthdayViewController.m; sourceTree = "<group>"; };
+		C7D7EF521FA2C2810092305E /* YKHappyBirthdayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YKHappyBirthdayViewController.xib; sourceTree = "<group>"; };
+		C7D7EF571FA2C4910092305E /* BirthdayGift_Bridging_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BirthdayGift_Bridging_Header.h; sourceTree = "<group>"; };
+		C7D7EF6B1FA2D1DC0092305E /* DrowLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrowLine.h; sourceTree = "<group>"; };
+		C7D7EF6C1FA2D1DC0092305E /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		C7D7EF6D1FA2D1DC0092305E /* ActionButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionButton.h; sourceTree = "<group>"; };
+		C7D7EF6E1FA2D1DC0092305E /* FireView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FireView.h; sourceTree = "<group>"; };
+		C7D7EF6F1FA2D1DC0092305E /* FireView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FireView.m; sourceTree = "<group>"; };
+		C7D7EF701FA2D1DC0092305E /* Stars.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stars.h; sourceTree = "<group>"; };
+		C7D7EF711FA2D1DC0092305E /* WPDrowAnimationLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPDrowAnimationLayer.h; sourceTree = "<group>"; };
+		C7D7EF721FA2D1DD0092305E /* WPDrowAnimationLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPDrowAnimationLayer.m; sourceTree = "<group>"; };
+		C7D7EF731FA2D1DD0092305E /* Stars.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stars.m; sourceTree = "<group>"; };
+		C7D7EF741FA2D1DD0092305E /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		C7D7EF751FA2D1DD0092305E /* ActionButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionButton.m; sourceTree = "<group>"; };
+		C7D7EF761FA2D1DD0092305E /* DrowLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrowLine.m; sourceTree = "<group>"; };
+		C7D7EF841FA302930092305E /* 小蓓蕾组合 - 祝你生日快乐.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "小蓓蕾组合 - 祝你生日快乐.mp3"; sourceTree = "<group>"; };
+		C7D7EF881FA30DAD0092305E /* CUSSenderBirthdayLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUSSenderBirthdayLayer.h; sourceTree = "<group>"; };
+		C7D7EF891FA30DAD0092305E /* CUSSenderBirthdayLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUSSenderBirthdayLayer.m; sourceTree = "<group>"; };
+		C7D7EF8A1FA30DAD0092305E /* CUSSenderFallLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUSSenderFallLayer.h; sourceTree = "<group>"; };
+		C7D7EF8B1FA30DAD0092305E /* CUSSenderFallLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUSSenderFallLayer.m; sourceTree = "<group>"; };
+		C7D7EF8C1FA30DAD0092305E /* CUSSenderFlowerLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUSSenderFlowerLayer.h; sourceTree = "<group>"; };
+		C7D7EF8D1FA30DAD0092305E /* CUSSenderFlowerLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUSSenderFlowerLayer.m; sourceTree = "<group>"; };
+		C7D7EF8E1FA30DAD0092305E /* CUSSenderGoldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUSSenderGoldLayer.h; sourceTree = "<group>"; };
+		C7D7EF8F1FA30DAD0092305E /* CUSSenderGoldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUSSenderGoldLayer.m; sourceTree = "<group>"; };
+		C7D7EF901FA30DAD0092305E /* CUSSenderKissLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUSSenderKissLayer.h; sourceTree = "<group>"; };
+		C7D7EF911FA30DAD0092305E /* CUSSenderKissLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUSSenderKissLayer.m; sourceTree = "<group>"; };
+		C7D7EF921FA30DAD0092305E /* CUSSenderLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUSSenderLayer.h; sourceTree = "<group>"; };
+		C7D7EF931FA30DAD0092305E /* CUSSenderLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUSSenderLayer.m; sourceTree = "<group>"; };
+		C7D7EF941FA30DAE0092305E /* CUSSenderRainLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUSSenderRainLayer.h; sourceTree = "<group>"; };
+		C7D7EF951FA30DAE0092305E /* CUSSenderRainLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUSSenderRainLayer.m; sourceTree = "<group>"; };
+		C7D7EF961FA30DAE0092305E /* CUSSenderSnowLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUSSenderSnowLayer.h; sourceTree = "<group>"; };
+		C7D7EF971FA30DAE0092305E /* CUSSenderSnowLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUSSenderSnowLayer.m; sourceTree = "<group>"; };
+		C7D7EF981FA30DAE0092305E /* CUSSenderStarLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CUSSenderStarLayer.h; sourceTree = "<group>"; };
+		C7D7EF991FA30DAE0092305E /* CUSSenderStarLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CUSSenderStarLayer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C787574C1F9F1F55006056BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D342FD15A5515526C45054FC /* Pods_BirthdayGift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A54950E619F748029350FC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C6B36EDB84A1FFD6DA8F76F /* Pods_BirthdayGift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A01C44D42D94468808F6EB65 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3CE6C04BC4517EA37E98E51 /* Pods-BirthdayGift.debug.xcconfig */,
+				89D27D3BAAEAF7EFA4B9F67F /* Pods-BirthdayGift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C78757461F9F1F54006056BF = {
+			isa = PBXGroup;
+			children = (
+				C78757511F9F1F55006056BF /* BirthdayGift */,
+				C78757501F9F1F55006056BF /* Products */,
+				A01C44D42D94468808F6EB65 /* Pods */,
+				6A54950E619F748029350FC5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C78757501F9F1F55006056BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C787574F1F9F1F55006056BF /* BirthdayGift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C78757511F9F1F55006056BF /* BirthdayGift */ = {
+			isa = PBXGroup;
+			children = (
+				C78757521F9F1F55006056BF /* AppDelegate.swift */,
+				C78757641F9F282B006056BF /* LoginViewController.swift */,
+				C78D9AF91FA03014008B2B73 /* MainTabbarViewController.swift */,
+				C79A76E91FA1B140004B282E /* BaoBaoViewController.swift */,
+				C78D9AF51FA02FC1008B2B73 /* SHENGViewController.swift */,
+				C78D9AF31FA02FB4008B2B73 /* RIViewController.swift */,
+				C78D9AF11FA024F8008B2B73 /* KUAIViewController.swift */,
+				C78D9AF71FA02FCA008B2B73 /* LEViewController.swift */,
+				C7AAFC791F9F3DB300D482CA /* MusicHandle.swift */,
+				C79A76EB1FA1DCDF004B282E /* Constant.swift */,
+				C7D7EF571FA2C4910092305E /* BirthdayGift_Bridging_Header.h */,
+				C7D7EF861FA30DAD0092305E /* CUSSender */,
+				C7D7EF6A1FA2CEE90092305E /* HLHappyBirthday */,
+				C7D7EF441FA2C2800092305E /* YKHappyBirthday */,
+				C7AAFC771F9F37D300D482CA /* 刘若英 - 生日快乐.mp3 */,
+				C79A76E11FA1866A004B282E /* 云雀合唱团 - 祝你生日快乐.mp3 */,
+				C7D7EF841FA302930092305E /* 小蓓蕾组合 - 祝你生日快乐.mp3 */,
+				C79A76E31FA1AA1B004B282E /* 陈一发儿 - 童话镇.mp3 */,
+				C79A76E41FA1AA1B004B282E /* 温岚,周杰伦 - 祝我生日快乐.mp3 */,
+				C78757561F9F1F55006056BF /* Main.storyboard */,
+				C78757591F9F1F55006056BF /* Assets.xcassets */,
+				C787575B1F9F1F55006056BF /* LaunchScreen.storyboard */,
+				C787575E1F9F1F55006056BF /* Info.plist */,
+			);
+			path = BirthdayGift;
+			sourceTree = "<group>";
+		};
+		C7D7EF441FA2C2800092305E /* YKHappyBirthday */ = {
+			isa = PBXGroup;
+			children = (
+				C7D7EF451FA2C2800092305E /* Model */,
+				C7D7EF4C1FA2C2810092305E /* View */,
+				C7D7EF4F1FA2C2810092305E /* ViewController */,
+			);
+			path = YKHappyBirthday;
+			sourceTree = "<group>";
+		};
+		C7D7EF451FA2C2800092305E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7D7EF461FA2C2800092305E /* YKAudioPlayerMgr.h */,
+				C7D7EF471FA2C2800092305E /* YKAudioPlayerMgr.m */,
+				C7D7EF481FA2C2810092305E /* YKBirthdayItem.h */,
+				C7D7EF491FA2C2810092305E /* YKBirthdayItem.m */,
+				C7D7EF4A1FA2C2810092305E /* YKBirthdayMgr.h */,
+				C7D7EF4B1FA2C2810092305E /* YKBirthdayMgr.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C7D7EF4C1FA2C2810092305E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7D7EF4D1FA2C2810092305E /* YKBirthdayView.h */,
+				C7D7EF4E1FA2C2810092305E /* YKBirthdayView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C7D7EF4F1FA2C2810092305E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C7D7EF501FA2C2810092305E /* YKHappyBirthdayViewController.h */,
+				C7D7EF511FA2C2810092305E /* YKHappyBirthdayViewController.m */,
+				C7D7EF521FA2C2810092305E /* YKHappyBirthdayViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		C7D7EF6A1FA2CEE90092305E /* HLHappyBirthday */ = {
+			isa = PBXGroup;
+			children = (
+				C7D7EF6D1FA2D1DC0092305E /* ActionButton.h */,
+				C7D7EF751FA2D1DD0092305E /* ActionButton.m */,
+				C7D7EF6B1FA2D1DC0092305E /* DrowLine.h */,
+				C7D7EF761FA2D1DD0092305E /* DrowLine.m */,
+				C7D7EF6E1FA2D1DC0092305E /* FireView.h */,
+				C7D7EF6F1FA2D1DC0092305E /* FireView.m */,
+				C7D7EF701FA2D1DC0092305E /* Stars.h */,
+				C7D7EF731FA2D1DD0092305E /* Stars.m */,
+				C7D7EF741FA2D1DD0092305E /* UIView+Extension.h */,
+				C7D7EF6C1FA2D1DC0092305E /* UIView+Extension.m */,
+				C7D7EF711FA2D1DC0092305E /* WPDrowAnimationLayer.h */,
+				C7D7EF721FA2D1DD0092305E /* WPDrowAnimationLayer.m */,
+			);
+			path = HLHappyBirthday;
+			sourceTree = "<group>";
+		};
+		C7D7EF861FA30DAD0092305E /* CUSSender */ = {
+			isa = PBXGroup;
+			children = (
+				C7D7EF8A1FA30DAD0092305E /* CUSSenderFallLayer.h */,
+				C7D7EF8B1FA30DAD0092305E /* CUSSenderFallLayer.m */,
+				C7D7EF881FA30DAD0092305E /* CUSSenderBirthdayLayer.h */,
+				C7D7EF891FA30DAD0092305E /* CUSSenderBirthdayLayer.m */,
+				C7D7EF8C1FA30DAD0092305E /* CUSSenderFlowerLayer.h */,
+				C7D7EF8D1FA30DAD0092305E /* CUSSenderFlowerLayer.m */,
+				C7D7EF8E1FA30DAD0092305E /* CUSSenderGoldLayer.h */,
+				C7D7EF8F1FA30DAD0092305E /* CUSSenderGoldLayer.m */,
+				C7D7EF901FA30DAD0092305E /* CUSSenderKissLayer.h */,
+				C7D7EF911FA30DAD0092305E /* CUSSenderKissLayer.m */,
+				C7D7EF921FA30DAD0092305E /* CUSSenderLayer.h */,
+				C7D7EF931FA30DAD0092305E /* CUSSenderLayer.m */,
+				C7D7EF941FA30DAE0092305E /* CUSSenderRainLayer.h */,
+				C7D7EF951FA30DAE0092305E /* CUSSenderRainLayer.m */,
+				C7D7EF961FA30DAE0092305E /* CUSSenderSnowLayer.h */,
+				C7D7EF971FA30DAE0092305E /* CUSSenderSnowLayer.m */,
+				C7D7EF981FA30DAE0092305E /* CUSSenderStarLayer.h */,
+				C7D7EF991FA30DAE0092305E /* CUSSenderStarLayer.m */,
+			);
+			path = CUSSender;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C787574E1F9F1F55006056BF /* BirthdayGift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C78757611F9F1F55006056BF /* Build configuration list for PBXNativeTarget "BirthdayGift" */;
+			buildPhases = (
+				DAA39C4FCBAE5D0466372AE8 /* [CP] Check Pods Manifest.lock */,
+				C787574B1F9F1F55006056BF /* Sources */,
+				C787574C1F9F1F55006056BF /* Frameworks */,
+				C787574D1F9F1F55006056BF /* Resources */,
+				C5FCD5C5E0155F264BEF7F8B /* [CP] Embed Pods Frameworks */,
+				3187B3595A98D11AA0085D4D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BirthdayGift;
+			productName = BirthdayGift;
+			productReference = C787574F1F9F1F55006056BF /* BirthdayGift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C78757471F9F1F54006056BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = zhiyuehl;
+				TargetAttributes = {
+					C787574E1F9F1F55006056BF = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = C787574A1F9F1F54006056BF /* Build configuration list for PBXProject "BirthdayGift" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C78757461F9F1F54006056BF;
+			productRefGroup = C78757501F9F1F55006056BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C787574E1F9F1F55006056BF /* BirthdayGift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C787574D1F9F1F55006056BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7D7EF851FA303D90092305E /* 小蓓蕾组合 - 祝你生日快乐.mp3 in Resources */,
+				C7D7EF5D1FA2C82C0092305E /* YKHappyBirthdayViewController.xib in Resources */,
+				C79A76E71FA1AA24004B282E /* 陈一发儿 - 童话镇.mp3 in Resources */,
+				C79A76E61FA1AA21004B282E /* 温岚,周杰伦 - 祝我生日快乐.mp3 in Resources */,
+				C79A76E21FA18677004B282E /* 云雀合唱团 - 祝你生日快乐.mp3 in Resources */,
+				C7AAFC781F9F37DC00D482CA /* 刘若英 - 生日快乐.mp3 in Resources */,
+				C787575D1F9F1F55006056BF /* LaunchScreen.storyboard in Resources */,
+				C787575A1F9F1F55006056BF /* Assets.xcassets in Resources */,
+				C78757581F9F1F55006056BF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3187B3595A98D11AA0085D4D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BirthdayGift/Pods-BirthdayGift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5FCD5C5E0155F264BEF7F8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BirthdayGift/Pods-BirthdayGift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAA39C4FCBAE5D0466372AE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C787574B1F9F1F55006056BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7D7EFCF1FA318730092305E /* CUSSenderFallLayer.m in Sources */,
+				C7D7EFD31FA318730092305E /* CUSSenderGoldLayer.m in Sources */,
+				C7D7EFD61FA318730092305E /* CUSSenderLayer.m in Sources */,
+				C7D7EFD81FA318730092305E /* CUSSenderRainLayer.m in Sources */,
+				C7D7EFDA1FA318730092305E /* CUSSenderSnowLayer.m in Sources */,
+				C7D7EFCA1FA318580092305E /* CUSSenderBirthdayLayer.m in Sources */,
+				C7D7EFCB1FA318580092305E /* CUSSenderFlowerLayer.m in Sources */,
+				C7D7EFCC1FA318580092305E /* CUSSenderKissLayer.m in Sources */,
+				C7D7EFCD1FA318580092305E /* CUSSenderStarLayer.m in Sources */,
+				C7D7EF771FA2D1E90092305E /* ActionButton.m in Sources */,
+				C7D7EF781FA2D1E90092305E /* DrowLine.m in Sources */,
+				C7D7EF791FA2D1E90092305E /* FireView.m in Sources */,
+				C7D7EF7A1FA2D1E90092305E /* Stars.m in Sources */,
+				C7D7EF7B1FA2D1E90092305E /* UIView+Extension.m in Sources */,
+				C7D7EF7C1FA2D1E90092305E /* WPDrowAnimationLayer.m in Sources */,
+				C7D7EF651FA2CA750092305E /* YKAudioPlayerMgr.m in Sources */,
+				C7D7EF661FA2CA750092305E /* YKBirthdayItem.m in Sources */,
+				C7D7EF671FA2CA750092305E /* YKBirthdayMgr.m in Sources */,
+				C7D7EF681FA2CA750092305E /* YKBirthdayView.m in Sources */,
+				C7D7EF691FA2CA750092305E /* YKHappyBirthdayViewController.m in Sources */,
+				C7D7EF5C1FA2C8190092305E /* YKHappyBirthdayViewController.xib in Sources */,
+				C78D9AF41FA02FB4008B2B73 /* RIViewController.swift in Sources */,
+				C78D9AFA1FA03014008B2B73 /* MainTabbarViewController.swift in Sources */,
+				C79A76EA1FA1B140004B282E /* BaoBaoViewController.swift in Sources */,
+				C78D9AF81FA02FCA008B2B73 /* LEViewController.swift in Sources */,
+				C78757651F9F282B006056BF /* LoginViewController.swift in Sources */,
+				C78D9AF61FA02FC1008B2B73 /* SHENGViewController.swift in Sources */,
+				C78757531F9F1F55006056BF /* AppDelegate.swift in Sources */,
+				C79A76EC1FA1DCDF004B282E /* Constant.swift in Sources */,
+				C7AAFC7A1F9F3DB300D482CA /* MusicHandle.swift in Sources */,
+				C78D9AF21FA024F8008B2B73 /* KUAIViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C78757561F9F1F55006056BF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C78757571F9F1F55006056BF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C787575B1F9F1F55006056BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C787575C1F9F1F55006056BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C787575F1F9F1F55006056BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C78757601F9F1F55006056BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C78757621F9F1F55006056BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3CE6C04BC4517EA37E98E51 /* Pods-BirthdayGift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 99LHU7K998;
+				INFOPLIST_FILE = BirthdayGift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tederen.hlllappTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "30037a09-7370-4b68-8a86-1ed945534546";
+				PROVISIONING_PROFILE_SPECIFIER = "iphone_birthday——1027";
+				SWIFT_OBJC_BRIDGING_HEADER = BirthdayGift/BirthdayGift_Bridging_Header.h;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C78757631F9F1F55006056BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89D27D3BAAEAF7EFA4B9F67F /* Pods-BirthdayGift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 99LHU7K998;
+				INFOPLIST_FILE = BirthdayGift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tederen.hlllappTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "30037a09-7370-4b68-8a86-1ed945534546";
+				PROVISIONING_PROFILE_SPECIFIER = "iphone_birthday——1027";
+				SWIFT_OBJC_BRIDGING_HEADER = BirthdayGift/BirthdayGift_Bridging_Header.h;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C787574A1F9F1F54006056BF /* Build configuration list for PBXProject "BirthdayGift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C787575F1F9F1F55006056BF /* Debug */,
+				C78757601F9F1F55006056BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C78757611F9F1F55006056BF /* Build configuration list for PBXNativeTarget "BirthdayGift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C78757621F9F1F55006056BF /* Debug */,
+				C78757631F9F1F55006056BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C78757471F9F1F54006056BF /* Project object */;
+}

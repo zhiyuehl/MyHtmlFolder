@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>10.13-demo6-js</title>
+	</head>
+	<body>
+		<h3>计算托运费用</h3>
+		<input type="number" id="kg" name="kg" placeholder="输入行李总量（kg）" min="0"/>
+		<br/>
+		<input type="number" id="kgresult" name="kgresult" placeholder="托运费用"/>
+		<br /><br />
+		<input type="button" value="计算价格" onclick="onclick()"/>
+		<hr />
+		
+		
+		
+		
+		<script type="text/javascript">
+			
+			function onclick() {
+				alert("jaja");
+				var kg = document.getElementById('kg').value;
+				var kgresult = document.getElementById('kgresult');
+				if (kg <= 50) {
+					kgresult.value = kg * 10 + 100;
+				}else {
+					kgresult.value = kg * 10 + 100 + (kg -50)*20;
+				}
+			}
+			
+			
+		</script>
+		
+	</body>
+</html>

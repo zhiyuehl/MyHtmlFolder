@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>10.17-demo4-mouse</title>
+		
+		<style type="text/css">
+			
+			#box {
+				width: 80px;
+			}
+			
+			.hideUl {
+				list-style-type: none;
+			}
+			ul {
+				padding: 0px;
+				margin: 0px;
+				border: 1px solid aquamarine;
+				display: none;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		
+		<div id="box">
+			<a href="#">设置</a>
+			<ul class="hideUl">
+				<li>张三</li>
+				<li>李四</li>
+				<li>王二</li>
+			</ul>
+			
+		</div>
+		
+		
+		<script type="text/javascript">
+			var sett = document.querySelector('a');
+			var ull = document.querySelector('ul');
+			
+			var timer;
+			
+			sett.onmousemove = ull.onmousemove = function () {
+				clearTimeout(timer);
+				ull.style.display = 'block';
+			}
+			
+			sett.onmouseout = ull.onmouseout = function () {
+				clearTimeout(timer);
+				timer = setTimeout(function() {
+					ull.style.display = 'none';
+				},300);
+			}
+			
+		</script>
+		
+		
+		
+	</body>
+</html>

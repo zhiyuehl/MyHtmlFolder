@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>10.17-demo9-时钟</title>
+		
+		<style type="text/css">
+			* {
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			ul {
+				list-style: none;
+			}
+			
+			#box {
+				width: 500px;
+				height: 500px;
+				border-radius: 50%;
+				margin: 50px auto;
+				/*阴影效果
+				 参数3：模糊的距离
+				 参数4：模糊大小
+				 inset：向内偏移
+				 * */
+				box-shadow: 0px 0px 25px 2px gray;	
+				background-image: linear-gradient(to bottom, white 2%, silver 10%, silver 90%,white);	
+				position: relative;	
+			}
+			
+			#clock {
+				width: 94%;
+				height: 94%;
+				border-radius: 50%;
+				background-color: #fff;
+				position: absolute;
+				margin: auto;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				box-shadow: 0 0 15px 2px silver inset; 
+			}
+			
+			#number {
+				height: 100%;
+				border-radius: 50%;
+				position: relative;
+			}
+			
+			#number li {
+				position: absolute;
+				width: 100%;
+				height: 50px;
+				font-size: 40px;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+			}
+			#number li span {
+				line-height: 50px;
+				display: inline-block;
+				margin-left: 18px;
+				height: 100%;
+			}
+			
+			#dial {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			
+			#dial li {
+				position: absolute;
+				height: 2px;
+				width: 100%;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+			}
+			
+			#dial li span {
+				display: block;
+				width: 8px;
+				height: 2px;
+				background-color: #000;
+			}
+			
+			
+			#needle {
+				position: absolute;
+				width: 50px;
+				height: 50px;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				margin: auto;
+				background-color: silver;
+				border-radius: 50%;
+			}
+			
+			
+			
+			#needle li{
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				left: -10px;
+				transform-origin: 35px center;
+			}
+			
+			#hour {
+				width: 140px;
+				height: 15px;
+				background-color:dimgray ;
+				z-index: 8;
+				box-shadow: 0 0 3px 1px lightslategray;
+				border-radius: 40%;
+			}
+			
+			#min {
+				width: 180px;
+				height: 10px;
+				background-color: lightslategray;
+				z-index: 9;
+				box-shadow: 0 0 5px 1px gainsboro;
+				border-radius: 50%;
+			}
+			
+			#sec {
+				width: 240px;
+				height: 5px;
+				background-color: gainsboro;
+				z-index: 10;
+				box-shadow: 0 0 3px 1px gainsboro;
+				border-radius: 50%;
+			}
+			
+			
+			
+		</style>
+		
+	</head>
+	<body>
+		
+		<!--外表框-->
+		<div id="box">
+			<!--表盘-->
+			<div id="clock">
+				<!--数字-->
+				<ul id="number">
+					<li><span>9</span></li>
+					<li><span>10</span></li>
+					<li><span>11</span></li>
+					<li><span>12</span></li>
+					<li><span>1</span></li>
+					<li><span>2</span></li>
+					<li><span>3</span></li>
+					<li><span>4</span></li>
+					<li><span>5</span></li>
+					<li><span>6</span></li>
+					<li><span>7</span></li>
+					<li><span>8</span></li>
+				</ul>
+				
+				<ul id="dial">
+					
+				</ul>
+				
+				<ul id="needle">
+					<li id="hour"></li>
+					<li id="min"></li>
+					<li id="sec"></li>
+				</ul>
+				
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			//数字
+			var numbers = document.querySelectorAll("#number li");
+			var numbers_span = document.querySelectorAll("#number span");
+			for (var i = 0; i < numbers.length; i++) {
+				numbers[i].style.transform = "rotate(" + (i*30) + "deg)";
+				numbers_span[i].style.transform = "rotate(" + (i*(-30)) + "deg)";
+			}
+			//刻度
+			var dial = document.getElementById("dial");
+			for (var i = 0; i < 60; i++) {
+				dial.innerHTML += '<li><span></span></li>';
+				
+				var dial_li = dial.querySelectorAll("li")[i];
+				dial_li.style.transform = "rotate(" + (i*6) + "deg)";
+				
+				if (i % 5 == 0) {
+					var dial_li_span = dial.querySelectorAll('span')[i];
+					dial_li_span.style.height = '3.5px';
+					dial_li_span.style.width = '12px';
+				}
+			}
+			
+			//指针
+			var hour = document.getElementById("hour");
+			var min = document.getElementById("min");
+			var sec = document.getElementById("sec");
+			
+			function updateTime() {
+				var currentDate = new Date;
+				var h = currentDate.getHours();
+				var m = currentDate.getMinutes();
+				var s = currentDate.getSeconds();
+				
+				var sDeg = s * 6;
+				var mDeg = m * 6 + (s/60)*6;
+				var hDeg = h * 30 + (m/60*30) + ((s/(60 * 60)) * 6);
+				
+				sec.style.transform = "rotate(" + (sDeg-90) + "deg)";
+				min.style.transform =  "rotate(" + (mDeg-90) + "deg)";
+				hour.style.transform = "rotate(" + (hDeg-90) + "deg)";
+				
+			}
+			
+			updateTime();
+			setInterval(updateTime,1000);
+			
+		</script>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>10.17-demo5-碰壁检测</title>
+		<style type="text/css">
+			.box {
+				width: 800px;
+				height: 500px;
+				border: 2px solid blue;
+				position: relative;
+			}
+			#ball {
+				background-color: red;
+				width: 50px;
+				height: 50px;
+				border-radius: 50px;
+				position: absolute;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		
+		<div class="box">
+			<div id="ball"></div>
+		</div>
+		
+		
+		<script type="text/javascript">
+			var ball = document.getElementById('ball');
+			//获取类为box的第一个元素
+			var box = document.querySelector('.box');
+			//获取id为ball的第一个元素
+//			var box = document.querySelector('#ball');
+			
+			var x = 0;
+			var speedX = 1;
+			
+			var y = 0;
+			var speedY = 2;
+			
+			setInterval(function(){
+				x += speedX;
+				ball.style.left = x + 'px';
+				if (x >= 750 || x <= 0) {
+					speedX *= -1;
+				}
+				
+				y += speedY;
+				ball.style.top = y + 'px';
+				if (y <= 0 || y >= 450) {
+					speedY *= -1;
+				}
+				
+				
+			},5);
+			
+			
+			
+			
+			
+		</script>
+		
+		
+		
+	</body>
+</html>

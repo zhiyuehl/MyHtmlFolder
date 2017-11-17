@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>10.17-demo7-</title>
+		
+		<style type="text/css">
+			
+			.content {
+				margin: 50px auto;
+				width: 300px;
+				height: 200px;
+				font-size: 14px;
+				position: relative;
+			}
+			/*.version {
+				list-style-type: none;
+			}*/
+			#index {
+				color: silver;
+				text-decoration: none;
+			}
+			#select {
+				width: 150px;
+				height: 75px;
+				top: 0px;
+				line-height: 25px;
+				text-align: center;
+				border-radius: 5px;
+				left: 45px;
+				position: absolute;
+				display: none;
+				border: 1px solid silver;
+			}
+			#select ul {
+				list-style: none;
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			#select ul li span{
+				display: none;
+			}
+			
+		</style>
+		
+	</head>
+	<body>
+		
+		
+		
+		<div class="content">
+			版本：
+			<a href="#" id="index">默认版本</a>
+			<div id="select">
+				<ul class="version">
+					<li><span>√ </span>默认版本</li>
+					<li><span>√ </span>网易6.0</li>
+					<li><span>√ </span>网易6.0简约版</li>
+				</ul>
+			</div>		
+			
+		</div>
+		
+		<script type="text/javascript">
+			
+			var index = document.getElementById("index");
+			var selectte = document.getElementById("select");
+			var list = document.querySelectorAll("#select ul li");
+			var hidden = document.querySelectorAll("span");
+			
+			index.onclick = function() {
+				index.style.display = 'none';
+				selectte.style.display = 'block';
+			};
+			
+			selectte.onmouseleave = function() {
+				index.style.display = 'inline-block';//排列在同行内，block会独占一行
+				selectte.style.display = 'none';
+			};
+			
+			for (var i = 0; i < list.length; i++) {
+				list[i].onmouseover = function() {
+					this.style.backgroundColor = 'silver';
+				};
+				list[i].onmouseleave = function() {
+					this.style.backgroundColor = 'transparent';
+				};
+				
+				list[i].index1 = i;
+				list[i].onclick = function() {
+					for (var i = 0; i < list.length; i++) {
+						list[i].style.color = 'black';
+						hidden[i].style.display = 'none';
+					}
+					index.innerText = this.innerText;
+					this.style.color = 'red';
+					hidden[this.index1].style.display = 'inline-block';
+					index.style.display = 'inline-block';
+					selectte.style.display = 'none';
+				};
+			}
+			
+			
+		</script>
+		
+		
+	</body>
+</html>
